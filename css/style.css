@@ -1,0 +1,22 @@
+body {
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  border: 1px solid #2C2B2B;
+  border-radius: 35px;
+  height: 70px;
+  color: #2C2B2B;
+}
+
+.btn:hover, .btn.active {
+  color: white;
+  background: #2C2B2B;
+  cursor: pointer;
+}
