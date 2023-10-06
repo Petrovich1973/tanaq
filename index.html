@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>TANAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header class="header">
-    <div class="header__logo"></div>
-    <nav class="header__navigation">
-        <ul>
-            <li><a href="#microscope">Микроскопы</a></li>
-            <li><a href="#biomedicalTests">Биомедицинские тесты</a></li>
-            <li><a href="#telemedicine">Телемедицина</a></li>
-            <li><a href="#serviceCenter">Сервисный центр</a></li>
-        </ul>
-    </nav>
-    <div class="header__info"></div>
+    <img class="header__logo" src="images/main/logo.png" alt="TANAQ" width="80px" height="40"/>
+    <ul class="header__navigation">
+        <li><a href="#microscope">Микроскопы</a></li>
+        <li><a href="#biomedicalTests">Биомедицинские тесты</a></li>
+        <li><a href="#telemedicine">Телемедицина</a></li>
+        <li><a href="#serviceCenter">Сервисный центр</a></li>
+    </ul>
+    <div class="header__right">
+        <a href="#" class="link tel">+8 (999) 999 99 99</a>
+        <a href="#" class="link email">ai@microtec.com</a>
+        <a href="#" class="btn active">Связаться</a>
+    </div>
 </header>
 <div class="title">
     <h1>TANAQ</h1>
@@ -28,164 +32,161 @@
         <h2 class="block__title">Микроскопы</h2>
         <div class="block__index">(1)</div>
     </div>
-    <div class="slider">
-        <ul class="slider__list">
-            <li class="slider__item">
-                <div class="slider__row">
-                    <div class="slider__name">NIKON</div>
-                    <a href="#" class="btn active">&#10230;</a>
-                </div>
-                <div class="slider__row">
-                    <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/NIKON.png" alt="NIKON"/></div>
-                </div>
-            </li>
-            <li class="slider__item">
-                <div class="slider__row">
-                    <div class="slider__name">ZEISS</div>
-                    <a href="#" class="btn active">&#10230;</a>
-                </div>
-                <div class="slider__row">
-                    <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/ZEISS.png" alt="ZEISS"/></div>
-                </div>
-            </li>
-            <li class="slider__item">
-                <div class="slider__row">
-                    <div class="slider__name">LEICA</div>
-                    <a href="#" class="btn active">&#10230;</a>
-                </div>
-                <div class="slider__row">
-                    <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/LEICA.png" alt="LEICA"/></div>
-                </div>
-            </li>
-            <li class="slider__item">
-                <div class="slider__row">
-                    <div class="slider__name">OLYMPUS</div>
-                    <a href="#" class="btn active">&#10230;</a>
-                </div>
-                <div class="slider__row">
-                    <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/OLYMPUS.png" alt="OLYMPUS"/></div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <ul class="slider">
+        <li class="slider__item" style="background-image: url(images/slider/slide_01.png)">
+            <div class="slider__row top">
+                <div class="slider__name">NIKON</div>
+                <a href="#" class="slider__link btn active">&#10230;</a>
+            </div>
+            <div class="slider__row down">
+                <div class="slider__description">Прямые и обратные микроскопы</div>
+                <div class="slider__logo"><img src="images/microscope/NIKON.png" alt="NIKON" width="68px"
+                                               height="34px"/></div>
+            </div>
+        </li>
+        <li class="slider__item" style="background-image: url(images/slider/slide_02.png)">
+            <div class="slider__row top">
+                <div class="slider__name">ZEISS</div>
+                <a href="#" class="slider__link btn active">&#10230;</a>
+            </div>
+            <div class="slider__row down">
+                <div class="slider__description">Прямые и обратные микроскопы</div>
+                <div class="slider__logo"><img src="images/microscope/ZEISS.png" alt="ZEISS" width="68px"
+                                               height="34px"/></div>
+            </div>
+        </li>
+        <li class="slider__item active" style="background-image: url(images/slider/slide_03.png)">
+            <div class="slider__row top">
+                <div class="slider__name">LEICA</div>
+                <a href="#" class="slider__link btn active">&#10230;</a>
+            </div>
+            <div class="slider__row down">
+                <div class="slider__description">Прямые и обратные микроскопы</div>
+                <div class="slider__logo"><img src="images/microscope/LEICA.png" alt="LEICA" width="68px"
+                                               height="34px"/></div>
+            </div>
+        </li>
+        <li class="slider__item" style="background-image: url(images/slider/slide_04.png)">
+            <div class="slider__row top">
+                <div class="slider__name">OLYMPUS</div>
+                <a href="#" class="slider__link btn active">&#10230;</a>
+            </div>
+            <div class="slider__row down">
+                <div class="slider__description">Прямые и обратные микроскопы</div>
+                <div class="slider__logo"><img src="images/microscope/OLYMPUS.png" alt="OLYMPUS" width="68px"
+                                               height="34px"/></div>
+            </div>
+        </li>
+    </ul>
 </div>
 <div id="biomedicalTests" class="block">
     <div class="block__header">
         <h2 class="block__title">Биомедицинские тесты</h2>
         <div class="block__index">(2)</div>
     </div>
-    <div class="gallery">
-        <ul class="gallery__list">
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Гематология</h4>
-                        <div class="gallery__short-description">Дифференциальные мазки крови. Тесты костного мозга.
-                        </div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
-                </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/hematology.png" alt="Гематология"/>
+    <ul class="gallery">
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Гематология</h4>
+                    <div class="gallery__short-description">Дифференциальные мазки крови. Тесты костного мозга.
                     </div>
                 </div>
-            </li>
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Паразитология</h4>
-                        <div class="gallery__short-description">Поиск гельминтов и простейших.</div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                 </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/parasitology.png" alt="Паразитология"/>
-                    </div>
+                <img class="gallery__img" src="images/biomedicalTests/hematology.png" alt="Гематология"/>
+            </div>
+        </li>
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Паразитология</h4>
+                    <div class="gallery__short-description">Поиск гельминтов и простейших.</div>
                 </div>
-            </li>
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Виртуальный микроскоп</h4>
-                        <div class="gallery__short-description">Гистопатология. Снятие цифровых образов препаратов.
-                        </div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                 </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/virtual-microscope.png"
-                                                   alt="Виртуальный микроскоп"/>
+                <img class="gallery__img" src="images/biomedicalTests/parasitology.png" alt="Паразитология"/>
+            </div>
+        </li>
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Виртуальный микроскоп</h4>
+                    <div class="gallery__short-description">Гистопатология. Снятие цифровых образов препаратов.
                     </div>
                 </div>
-            </li>
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Генетика</h4>
-                        <div class="gallery__short-description">Поиск метафаз. Кариотипирование. FISH.</div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                 </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/genetics.png" alt="Генетика"/></div>
+                <img class="gallery__img" src="images/biomedicalTests/virtual-microscope.png"
+                     alt="Виртуальный микроскоп"/>
+            </div>
+        </li>
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Генетика</h4>
+                    <div class="gallery__short-description">Поиск метафаз. Кариотипирование. FISH.</div>
                 </div>
-            </li>
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Морфологический и структурный анализ</h4>
-                        <div class="gallery__short-description"></div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                 </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/morphological-structural-analysis.png"
-                                                   alt="Морфологический и структурный анализ"/></div>
+                <img class="gallery__img" src="images/biomedicalTests/genetics.png" alt="Генетика"/>
+            </div>
+        </li>
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Морфологический и структурный анализ</h4>
+                    <div class="gallery__short-description"></div>
                 </div>
-            </li>
-            <li class="gallery__item">
-                <div class="gallery__row">
-                    <div class="gallery__name">
-                        <h4>Анализ спермы</h4>
-                        <div class="gallery__short-description"></div>
-                    </div>
-                    <a href="#" class="btn">&#10230;</a>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                 </div>
-                <div class="gallery__row">
-                    <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
-                        производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
-                        Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
-                    </div>
-                    <div class="gallery__img"><img src="images/biomedicalTests/sperm-analysis.png"
-                                                   alt="Анализ спермы"/></div>
+                <img class="gallery__img" src="images/biomedicalTests/morphological-structural-analysis.png"
+                     alt="Морфологический и структурный анализ"/>
+            </div>
+        </li>
+        <li class="gallery__item">
+            <div class="gallery__row">
+                <div class="gallery__name">
+                    <h4>Анализ спермы</h4>
+                    <div class="gallery__short-description"></div>
                 </div>
-            </li>
-        </ul>
-    </div>
+                <a href="#" class="btn">&#10230;</a>
+            </div>
+            <div class="gallery__row effect">
+                <div class="gallery__description">Обработка слайдов осуществляется на тестовой системе с высокой
+                    производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
+                    Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
+                </div>
+                <img class="gallery__img" src="images/biomedicalTests/sperm-analysis.png"
+                     alt="Анализ спермы"/>
+            </div>
+        </li>
+    </ul>
 </div>
 <div id="telemedicine" class="block">
     <div class="block__header">
@@ -194,7 +195,7 @@
     </div>
     <div class="intro">
         <div class="intro__pic">
-            <img src="" alt="Обслуживание и научные телеконсультации осуществляются через интернет.">
+            <img src="images/telemedicine/telemedicine.png" alt="Обслуживание и научные телеконсультации осуществляются через интернет.">
         </div>
         <div class="intro__article-short">
             <h3 class="intro__title">Наши системы состоят из тестового и серверного оборудования.</h3>
@@ -206,7 +207,7 @@
                 необходимое количество обработанных слайдов в день. Результаты тестов переносятся на серверный компьютер
                 для коррекции ведущими специалистами.
             </div>
-            <a class="btn">
+            <a href="#" class="btn active">
                 <span>Оставьте заявку</span>
                 <span>&#10230;</span>
             </a>
@@ -220,25 +221,25 @@
     </div>
     <div class="intro">
         <div class="intro__pic">
-            <img src="" alt="Вы можете купить годовую подписку на наш сервис.">
+            <img src="images/serviceCenter/serviceCenter.png" alt="Вы можете купить годовую подписку на наш сервис.">
         </div>
-        <div class="intro__article">
+        <div class="intro__article-short">
             <h3 class="intro__title">Вы можете купить годовую подписку на наш сервис.</h3>
             <div class="intro__description-highlight">95% ошибок клиента могут быть исправлены удаленно</div>
             <div class="intro__description-full">Наши обученные специалисты обеспечивают установку и настройку системы у
                 клиента.
             </div>
-            <a href="#" class="btn">
+            <a href="#" class="btn active">
                 <span>Подписаться</span>
                 <span>&#10230;</span>
             </a>
         </div>
     </div>
 </div>
-<div class="contacts">Контакты</div>
+<div class="contacts">Contact us</div>
 <div>
     <form action="#" id="formFeedback" class="form">
-        <h4>Оставьте заявку, и мы свяжемся с вами</h4>
+        <!--        <h4>Оставьте заявку, и мы свяжемся с вами</h4>-->
         <div class="form__row">
             <label for="fio">ФИО</label>
             <input type="text" id="fio" name="fio"/>
@@ -256,7 +257,7 @@
             <label for="agree">Согласен с обработкой персональных данных</label>
         </div>
         <div class="form__row">
-            <button class="btn">
+            <button class="btn" type="submit">
                 <span>Подписаться</span>
                 <span>&#10230;</span>
             </button>
@@ -264,5 +265,7 @@
     </form>
 </div>
 <footer class="footer"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
