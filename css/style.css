@@ -78,6 +78,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     color: #2C2B2B;
     padding: 12px 24px;
     font-weight: 500;
+    line-height: 1.15;
 }
 
 .header {
@@ -260,6 +261,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 
 .gallery__name h4 {
     font-size: 24px;
+    line-height: 1.15;
     font-weight: 500;
     margin: 0 0 24px;
     padding: 0;
@@ -321,6 +323,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 
 .intro__title {
     font-size: 48px;
+    line-height: 1.15;
     font-weight: 400;
     margin: 0;
 }
@@ -377,6 +380,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 .form__name {
     margin: 0;
     font-size: 48px;
+    line-height: 1.15;
     font-weight: 400;
     color: #2C2B2B;
 }
