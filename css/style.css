@@ -2,6 +2,7 @@ body {
     font-size: 18px;
     font-family: Inter, serif;
     background-color: white;
+    color: #474747;
 }
 
 #app {
@@ -132,6 +133,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 
 .title .description {
     font-size: 24px;
+    line-height: 1.15;
     max-width: 38vw;
 }
 
@@ -382,7 +384,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     font-size: 48px;
     line-height: 1.15;
     font-weight: 400;
-    color: #2C2B2B;
+    color: #474747;
 }
 
 .form__row {
