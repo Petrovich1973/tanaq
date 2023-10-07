@@ -8,26 +8,12 @@ $(document).ready(function () {
         $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
 
-
     let sticky = document.querySelector('.header');
     $('#app').css("padding-top", sticky.clientHeight)
 
     $(window).resize(function () {
         $('#app').css("padding-top", sticky.clientHeight)
     })
-
-    $(window).scroll(function () {
-        let scrollDistance = $(window).scrollTop();
-
-        $('.section').each(function (i) {
-            // $(this).css("margin-top", sticky.clientHeight + 48)
-            if ($(this).position().top - sticky.clientHeight <= scrollDistance) {
-                $('a[href*="#"]:not([href="#"]).active').removeClass('active');
-                $('a').eq(i).addClass('active');
-            }
-        });
-
-    }).scroll();
 
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {
