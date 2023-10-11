@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     // Files to watch for
@@ -13,10 +14,15 @@ module.exports = {
 
     // Plugins
     plugins: [
-        new HtmlWebpackPlugin({
-            hash: true,
-            title : 'Live Reload - Webpack',
-            template : './src/index.html'
+        // new HtmlWebpackPlugin({
+        //     hash: true,
+        //     title : 'Live Reload - Webpack',
+        //     template : './src/index.html'
+        // }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src' }
+            ]
         })
     ],
 
@@ -37,7 +43,7 @@ module.exports = {
     // Development server set-up - define static assets directory and paths
     devServer: {
         open: true,
-        hot: false, // disable hot reload for plain HTML/CSS/JS development
+        hot: true, // disable hot reload for plain HTML/CSS/JS development
         compress: true,
         static: {
             directory: path.join(__dirname, 'src'),
