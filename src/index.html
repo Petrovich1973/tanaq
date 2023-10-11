@@ -5,31 +5,32 @@
     <title>TANAQ</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+<!--    <link rel="stylesheet" href="./css/normalize.css"/>-->
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
 <div id="app">
     <header class="header fixed">
         <div class="header__container">
-            <img class="header__logo" src="images/main/logo.png" alt="TANAQ" width="63" height="40"/>
+            <div class="header__left">
+            <img class="header__logo" src="./images/main/logo.png" alt="TANAQ" width="63" height="40"/>
             <ul class="navigation">
                 <li><a href="#microscope">Микроскопы</a></li>
                 <li><a href="#biomedicalTests">Биомедицинские тесты</a></li>
                 <li><a href="#telemedicine">Телемедицина</a></li>
                 <li><a href="#serviceCenter">Сервисный центр</a></li>
             </ul>
+            </div>
             <div class="header__right">
                 <a href="#" class="link tel">+8 (999) 999 99 99</a>
                 <a href="#" class="link email">ai@microtec.com</a>
-                <a href="#formFeedback" class="btn active">Связаться</a>
+                <a href="#formFeedback" class="link">Связаться</a>
             </div>
         </div>
     </header>
     <div class="title">
         <h1>TANAQ</h1>
-        <p class="description">Ручные и автоматизированные микроскопы для научных разработок и клинических
-            лабораторий.</p>
+        <p class="description">Ручные и автоматизированные микроскопы для научных разработок и клинических лабораторий.</p>
     </div>
     <div id="microscope" class="block section">
         <div class="block__header">
@@ -37,44 +38,44 @@
             <div class="block__index">(1)</div>
         </div>
         <ul class="slider">
-            <li class="slider__item" style="background-image: url(images/slider/slide_01.png)">
+            <li class="slider__item" style="background-image: url(./images/slider/slide_01.png)">
                 <div class="slider__row top">
                     <div class="slider__name">NIKON</div>
                     <a href="#" class="slider__link btn active">&#10230;</a>
                 </div>
                 <div class="slider__row down">
                     <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/NIKON.png" alt="NIKON"/></div>
+                    <div class="slider__logo"><img src="./images/microscope/NIKON.png" alt="NIKON"/></div>
                 </div>
             </li>
-            <li class="slider__item" style="background-image: url(images/slider/slide_02.png)">
+            <li class="slider__item" style="background-image: url(./images/slider/slide_02.png)">
                 <div class="slider__row top">
                     <div class="slider__name">ZEISS</div>
                     <a href="#" class="slider__link btn active">&#10230;</a>
                 </div>
                 <div class="slider__row down">
                     <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/ZEISS.png" alt="ZEISS"/></div>
+                    <div class="slider__logo"><img src="./images/microscope/ZEISS.png" alt="ZEISS"/></div>
                 </div>
             </li>
-            <li class="slider__item active" style="background-image: url(images/slider/slide_03.png)">
+            <li class="slider__item active" style="background-image: url(./images/slider/slide_03.png)">
                 <div class="slider__row top">
                     <div class="slider__name">LEICA</div>
                     <a href="#" class="slider__link btn active">&#10230;</a>
                 </div>
                 <div class="slider__row down">
                     <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/LEICA.png" alt="LEICA"/></div>
+                    <div class="slider__logo"><img src="./images/microscope/LEICA.png" alt="LEICA"/></div>
                 </div>
             </li>
-            <li class="slider__item" style="background-image: url(images/slider/slide_04.png)">
+            <li class="slider__item" style="background-image: url(./images/slider/slide_04.png)">
                 <div class="slider__row top">
                     <div class="slider__name">OLYMPUS</div>
                     <a href="#" class="slider__link btn active">&#10230;</a>
                 </div>
                 <div class="slider__row down">
                     <div class="slider__description">Прямые и обратные микроскопы</div>
-                    <div class="slider__logo"><img src="images/microscope/OLYMPUS.png" alt="OLYMPUS"/></div>
+                    <div class="slider__logo"><img src="./images/microscope/OLYMPUS.png" alt="OLYMPUS"/></div>
                 </div>
             </li>
         </ul>
@@ -99,7 +100,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/hematology.png" alt="Гематология"/>
+                    <img class="gallery__img" src="./images/biomedicalTests/hematology.png" alt="Гематология"/>
                 </div>
             </li>
             <li class="gallery__item">
@@ -115,7 +116,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/parasitology.png" alt="Паразитология"/>
+                    <img class="gallery__img" src="./images/biomedicalTests/parasitology.png" alt="Паразитология"/>
                 </div>
             </li>
             <li class="gallery__item">
@@ -132,7 +133,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/virtual-microscope.png"
+                    <img class="gallery__img" src="./images/biomedicalTests/virtual-microscope.png"
                          alt="Виртуальный микроскоп"/>
                 </div>
             </li>
@@ -149,7 +150,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/genetics.png" alt="Генетика"/>
+                    <img class="gallery__img" src="./images/biomedicalTests/genetics.png" alt="Генетика"/>
                 </div>
             </li>
             <li class="gallery__item">
@@ -165,7 +166,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/morphological-structural-analysis.png"
+                    <img class="gallery__img" src="./images/biomedicalTests/morphological-structural-analysis.png"
                          alt="Морфологический и структурный анализ"/>
                 </div>
             </li>
@@ -182,7 +183,7 @@
                         производительностью, чтобы обеспечить необходимое количество обработанных слайдов в день.
                         Результаты тестов переносятся на серверный компьютер для коррекции ведущими специалистами.
                     </div>
-                    <img class="gallery__img" src="images/biomedicalTests/sperm-analysis.png"
+                    <img class="gallery__img" src="./images/biomedicalTests/sperm-analysis.png"
                          alt="Анализ спермы"/>
                 </div>
             </li>
@@ -195,7 +196,7 @@
         </div>
         <div class="intro">
             <div class="intro__pic">
-                <img src="images/telemedicine/telemedicine.png"
+                <img src="./images/telemedicine/telemedicine.png"
                      alt="Обслуживание и научные телеконсультации осуществляются через интернет."/>
             </div>
             <div class="intro__article-short">
@@ -223,7 +224,7 @@
         </div>
         <div class="intro">
             <div class="intro__pic">
-                <img src="images/serviceCenter/serviceCenter.png"
+                <img src="./images/serviceCenter/serviceCenter.png"
                      alt="Вы можете купить годовую подписку на наш сервис."/>
             </div>
             <div class="intro__article-short">
@@ -277,7 +278,7 @@
             <div class="list__item">
                 <div class="list__row">
                     <div class="company">
-                        <img src="images/other/logo-AiMicrotec.png" alt="AIMICROTEC inc." width="61" height="38"/>
+                        <img src="./images/other/logo-AiMicrotec.png" alt="AIMICROTEC inc." width="61" height="38"/>
                         <h5>AIMICROTEC inc.</h5>
                     </div>
                 </div>

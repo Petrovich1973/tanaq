@@ -33,12 +33,17 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 .tel, .email {
     text-decoration: none;
     color: #AEAEAE;
+    white-space: nowrap;
 }
 
 .company {
     display: flex;
     gap: 24px;
     align-items: center;
+}
+
+.link {
+    color: #474747;
 }
 
 .btn {
@@ -68,7 +73,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 24px;
+    gap: 0;
 }
 
 .navigation a {
@@ -109,7 +114,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     flex-shrink: 0;
 }
 
-.header__right {
+.header__left, .header__right {
     display: flex;;
     gap: 24px;
     justify-content: center;
@@ -240,8 +245,10 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
     width: 33.3333%;
-    height: 600px;
+    /*height: 30vw;*/
+    max-height: 600px;
     padding: 24px;
     background-color: white;
     box-sizing: border-box;
@@ -249,12 +256,17 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 }
 
 .gallery__row.effect {
-    display: none;
+    visibility: hidden;
 }
 
 .gallery__row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gallery__row:last-child {
+    align-items: flex-end;
 }
 
 .gallery__name {
@@ -271,14 +283,18 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 
 .gallery__short-description {
     font-size: 18px;
+    line-height: 1.15;
     max-width: 90%;
     color: #AEAEAE;
 }
 
 .gallery__description {
     padding-right: 24px;
-    font-size: 16px;
+    font-size: 92%;
+    line-height: 1.15;
     color: #AEAEAE;
+    /*word-wrap: break-word;*/
+    /*word-break: break-all;*/
 }
 
 .gallery__img {
@@ -291,7 +307,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 }
 
 .gallery__item:hover .gallery__row.effect {
-    display: flex;
+    visibility: visible;
 }
 
 .intro {
@@ -316,12 +332,13 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     max-width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 24px;
 }
 
-.intro__article-short .btn {
-    max-width: 60%;
-}
+/*.intro__article-short .btn {*/
+/*    max-width: 60%;*/
+/*}*/
 
 .intro__title {
     font-size: 48px;
@@ -353,19 +370,19 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 }
 
 .list__item {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 24px;
     box-shadow: 0 0 0 1px #2C2B2B;
-    min-width: 440px;
     min-height: 440px;
     background-color: white;
+    flex-shrink: 0;
 }
 
 .list__item:first-child {
-    width: 100%;
+    flex-grow: 1;
+    max-width: 60vw;
 }
 
 .form {
@@ -429,7 +446,7 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     border-bottom: 1px solid #2C2B2B;
 }
 
-@media screen and (max-width: 1640px) {
+@media screen and (max-width: 1280px) {
     #app {
         padding-top: 0 !important;
     }
