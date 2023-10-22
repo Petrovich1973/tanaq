@@ -59,7 +59,7 @@ typings/
 .env
 
 # bundle dir
-/dist
+# /dist
 
 # dev
 TAI.txt
