@@ -5,3 +5,6 @@
 - *Установить зависимости* `npm install`
 - Сборка `npm run build`
 - Поднять на локальном сервере(поддерживается hot reload) `npm run dev`
+
+### prod
+- Статика в /dist
