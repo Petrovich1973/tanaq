@@ -58,5 +58,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# bundle dir
 /dist
+
+# dev
 TAI.txt
+/bootstrap-3.4.1
+/bootstrap-3.4.1.zip
+/Medicio.zip
+/Scaffold.zip

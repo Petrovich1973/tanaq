@@ -4,12 +4,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     // Files to watch for
-    entry: './src/js/script.js',
+    entry: './src/js/index.js',
 
     // Bundle/build output directory
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/script.js',
+        filename: 'js/index.js',
     },
 
     // Plugins
@@ -29,6 +29,17 @@ module.exports = {
     // Set node modules to use for various file types
     module: {
         rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']
