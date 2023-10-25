@@ -29,8 +29,8 @@
             </ul>
         </div>
         <div class="header__right">
-            <a href="tel:+89999999999" class="link tel">+8 (999) 999 99 99</a>
-            <a href="#" class="link email">ai@microtec.com</a>
+            <a href="phone:+79999999999" class="link tel">+8 (999) 999 99 99</a>
+            <a href="mailto:ai@microtec.com" class="link email">ai@microtec.com</a>
             <a href="#formFeedback" class="btn active">Contact</a>
             <img src="svg/bars.svg" alt="bars" id="bar-btn"/>
         </div>
@@ -312,10 +312,10 @@
                 </div>
                 <div class="tanaq__footer__item__down-group">
                     <ul class="navigation">
-                        <li><a href="#">Nikon</a></li>
-                        <li><a href="#">Zeiss</a></li>
-                        <li><a href="#">Leica</a></li>
-                        <li><a href="#">Olympus</a></li>
+                        <li><a href="http:localhost:3000">Nikon</a></li>
+                        <li><a href="http:localhost:3000">Zeiss</a></li>
+                        <li><a href="http:localhost:3000">Leica</a></li>
+                        <li><a href="http:localhost:3000">Olympus</a></li>
                         <li><a href="#biomedicalTests">Biomedical tests</a></li>
                         <li><a href="#telemedicine">Telemedicine</a></li>
                         <li><a href="#serviceCenter">Service center</a></li>
@@ -327,8 +327,8 @@
                     <h5>Contacts</h5>
                 </div>
                 <div class="tanaq__footer__item__down-group d-flex flex-column">
-                    <p><a href="#" class="link tel">+8 (999) 999 99 99</a></p>
-                    <p><a href="#" class="link email">ai@microtec.com</a></p>
+                    <p><a href="phone:+79999999999" class="link tel">+8 (999) 999 99 99</a></p>
+                    <p><a href="mailto:ai@microtec.com" class="link email">ai@microtec.com</a></p>
                     <p>Россия, Москва, ул. Ленинский проспект 32</p>
                 </div>
             </div>
@@ -342,6 +342,20 @@
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 
 <script>
+
+    let lastScrollTop = 0;
+    const header = $(".header");
+    const navbarHeight = header.outerHeight();
+
+    $('.navigation a[href^="#"]').on('click', function(e){
+        e.preventDefault();
+        let href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - navbarHeight - 20
+        },0, function() {
+        });
+    });
+
     $(".tanaq__slide").hover(function () {
         $(".tanaq__slide.active").removeClass("active");
         $(this).addClass("active");
@@ -356,18 +370,20 @@
     });
 
     $('.header .navigation').click(function () {
-        $('.header .navigation').removeClass("mobile-navigation");
+        $(this).removeClass("mobile-navigation");
     });
-
-    let lastScrollTop = 0;
-    const navbarHeight = $(".header").outerHeight();
-    const header = $(".header");
 
     $(window).scroll(hasScrolled);
 
     function hasScrolled() {
+
         $('.header .navigation').removeClass("mobile-navigation");
+
         const st = $(this).scrollTop();
+        // console.log("lastScrollTop", lastScrollTop)
+        // console.log("navbarHeight", navbarHeight)
+        // console.log("scrollTop", st)
+        // console.log("hidden", st > lastScrollTop && st > navbarHeight)
         header.toggleClass("hidden", st > lastScrollTop && st > navbarHeight);
         lastScrollTop = st;
     };
