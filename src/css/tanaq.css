@@ -368,6 +368,10 @@
     gap: 24px;
 }
 
+.tanaq__article-block h1 {
+    text-transform: uppercase;
+}
+
 .tanaq__article-column {
     flex: 1;
     display: flex;
@@ -791,7 +795,8 @@
     }
 
     .longTitleAdHoc {
-        font-size: 5rem !important;
+        font-size: 4rem !important;
+        letter-spacing: -0.28rem !important;
     }
 }
 
