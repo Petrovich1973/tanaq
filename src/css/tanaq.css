@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 430px;
+    min-height: 450px;
 }
 
 .tanaq__list-item__header {
@@ -207,6 +207,7 @@
 .tanaq__intro__pic img {
     display: block;
     max-width: 100%;
+    max-height: 600px;
 }
 
 .tanaq__intro__article-short {
@@ -381,6 +382,8 @@
 
 .tanaq__article-column.tanaq__img {
     background-size: cover;
+    min-height: 450px;
+    padding-top: 0;
 }
 
 .tanaq__manufacturer-title {
@@ -412,7 +415,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 24px;
-    min-height: 466px;
+    min-height: 450px;
 }
 
 .tanaq__manufacturer-list-item h4 {
@@ -522,6 +525,14 @@
 
     .tanaq__filter__search {
         flex: inherit;
+    }
+
+    .tanaq__manufacturer-list-item {
+        min-height: 400px;
+    }
+
+    .tanaq__article-column.tanaq__img {
+        min-height: 400px;
     }
 
 }
