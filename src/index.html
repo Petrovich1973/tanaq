@@ -491,25 +491,21 @@
                 <span class="icon__arrow-up"><img src="svg/arrow.svg" alt="arrow"></span>
             </a>
 
-            <form action="#" id="formFeedback" class="tanaq__contacts__form">
+            <form action="#" method="post" id="formFeedback" class="tanaq__contacts__form">
                 <h4 class="tanaq__contacts__form__name">Leave your message and<br/>we will contact you </h4>
-                <div class="tanaq__contacts__form__row">
+                <div class="tanaq__contacts__form__row form-field">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" autocomplete="off"/>
                 </div>
-                <div class="tanaq__contacts__form__row">
+                <div class="tanaq__contacts__form__row form-field">
                     <label for="email">E-mail</label>
                     <input type="text" id="email" name="email" autocomplete="off"/>
                 </div>
-                <!--                <div class="tanaq__contacts__form__row">-->
-                <!--                    <label for="message">Message</label>-->
-                <!--                    <input type="text" id="message" name="message" autocomplete="off"/>-->
-                <!--                </div>-->
-                <div class="tanaq__contacts__form__row">
+                <div class="tanaq__contacts__form__row form-field">
                     <label for="message">Message</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
-                <div class="row-field-checkbox">
+                <div class="row-field-checkbox form-field">
                     <input type="checkbox" id="agree" name="agree"/>
                     <label for="agree">I agree with the processing of personal information</label>
                 </div>
@@ -596,7 +592,6 @@
     })
 
     $(window).scroll(hasScrolled)
-
     function hasScrolled() {
 
         $('.header .navigation').removeClass("mobile-navigation")
@@ -613,9 +608,51 @@
         this.style.height = (this.scrollHeight) + "px"
     })
 
-    // $("#scrollToTop").click(function () {
-    //     $('html, body').animate({scrollTop: 0}, 0)
-    // })
+    $("#formFeedback").submit(function (e) {
+        e.preventDefault()
+
+        const data = $(this).serializeArray().reduce((acc, {name, value}) => ({...acc, [name]: value}), {})
+
+        // validate fields
+        if(!data.agree ) {
+            $("#agree").parent(".form-field").addClass("filedErrorForCheckbox");
+            return
+        } else {
+            $("#agree").parent(".form-field").removeClass("filedErrorForCheckbox")
+        }
+
+        if(!data.name ) {
+            $("#name").parent(".form-field").addClass("filedError");
+            return
+        } else {
+            $("#name").parent(".form-field").removeClass("filedError")
+        }
+
+        if(!data.email ) {
+            $("#email").parent(".form-field").addClass("filedError");
+            return
+        } else {
+            $("#email").parent(".form-field").removeClass("filedError")
+        }
+
+        $('button[type="submit"]').attr("disabled", true) // Защита от повторной отправки
+
+        // send ajax
+        $.ajax({
+            type: "POST",
+            url: "/send-handle", // Путь до файла отправителя
+            data: data,
+            success: function () {
+                console.log("Ok! Сообщение отправлено.")
+                $("#formFeedback").trigger("reset")
+            },
+            error: function() {
+                console.error("Error! Сообщение не отправлено.")
+                $("#formFeedback").trigger("reset")
+            }
+        })
+    })
+
 </script>
 
 </body>
