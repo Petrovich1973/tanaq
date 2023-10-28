@@ -751,6 +751,11 @@
     .tanaq__intro.tanaq__card .tanaq__intro__text {
         font-size: inherit;
     }
+
+    .longTitleAdHoc {
+        font-size: 5rem !important;
+        letter-spacing: -0.28rem !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -795,13 +800,19 @@
     }
 
     .longTitleAdHoc {
-        font-size: 4rem !important;
+        font-size: 4.5rem !important;
         letter-spacing: -0.28rem !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .longTitleAdHoc {
+        font-size: 18vw !important;
     }
 }
 
 @media (max-width: 360px) {
     .tanaq__manufacturer-title.OLYMPUS-tile, .tanaq__manufacturer-title.OLYMPUS-tile h1 {
-        font-size: 18vw;
+        font-size: 18vw !important;
     }
 }
