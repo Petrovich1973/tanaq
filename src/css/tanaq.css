@@ -61,7 +61,7 @@
     font-size: 3rem;
     line-height: 100%;
     font-weight: 500;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.15rem;
 }
 
 .tanaq__block__index {
@@ -125,13 +125,12 @@
 }
 
 .tanaq__slide__title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
 .tanaq__slide__text {
     max-width: 300px;
-    font-size: 16px;
 }
 
 .tanaq__slide__row > * {
@@ -237,10 +236,29 @@
     max-width: 90%;
 }
 
-.tanaq__contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+.tanaq__intro.tanaq__card {
+    border-top: none;
+    padding-top: 0;
+}
+
+.tanaq__intro.tanaq__card .tanaq__intro__title {
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: -0.2rem;
+    font-weight: 500;
+}
+
+.tanaq__intro.tanaq__card .tanaq__intro__description {
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: -0.05rem;
+    font-weight: 400;
+}
+
+.tanaq__intro.tanaq__card .tanaq__intro__text {
+    color: #2C2B2B;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .tanaq__contacts__title {
@@ -278,13 +296,17 @@
 .tanaq__contacts__form__row {
     border-bottom: 1px solid rgba(44, 43, 43, 0.50);
     display: flex;
+    align-items: flex-start;
     gap: 12px;
-    align-items: center;
+}
+
+.tanaq__contacts__form__row, .tanaq__contacts__form__row label {
+    cursor: text;
 }
 
 .tanaq__contacts__form__row input {
     flex-grow: 1;
-    height: 32px;
+    height: 24px;
     border: none;
 }
 
@@ -335,10 +357,26 @@
     font-size: 1rem;
 }
 
-.tanaq__manufacturer {
+.tanaq__manufacturer, .tanaq__manufacturer-detail, .tanaq__article, .tanaq__contacts {
     display: flex;
     flex-direction: column;
     gap: 64px;
+}
+
+.tanaq__article-block {
+    display: flex;
+    gap: 24px;
+}
+
+.tanaq__article-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tanaq__article-column.tanaq__img {
+    background-size: cover;
 }
 
 .tanaq__manufacturer-title {
@@ -512,6 +550,10 @@
         background-size: 100% auto;
     }
 
+    .tanaq__slide.pic-small, .tanaq__slide.pic-small.active {
+        background-size: 70% auto;
+    }
+
     .tanaq__slide__logo {
         width: 20%;
     }
@@ -558,7 +600,7 @@
     }
 
     .tanaq__intro__pic {
-        width: 100%;
+        width: 80%;
     }
 
     .tanaq__intro__article-short {
@@ -625,6 +667,16 @@
         min-height: 400px;
     }
 
+    .tanaq__article-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tanaq__article-column.tanaq__img {
+        width: 100%;
+        padding-top: 70%;
+    }
+
     .tanaq__filter__btn-group {
         gap: 8px;
     }
@@ -642,6 +694,12 @@
         flex: 1 calc(100% - 24px);
         background-size: 60% auto;
         background-position: bottom left;
+    }
+
+    .tanaq__slide.pic-small, .tanaq__slide.pic-small.active {
+        background-size: 60% auto;
+        background-position: center;
+        min-height: 420px;
     }
 
     .tanaq__slide__logo {
@@ -676,6 +734,18 @@
 
     .tanaq__manufacturer-list-item {
         flex: 1 calc(100% - 24px);
+    }
+
+    .tanaq__intro.tanaq__card .tanaq__intro__title {
+        font-size: 3rem;
+    }
+
+    .tanaq__intro.tanaq__card .tanaq__intro__description {
+        font-size: 1.5rem;
+    }
+
+    .tanaq__intro.tanaq__card .tanaq__intro__text {
+        font-size: inherit;
     }
 }
 
@@ -718,6 +788,10 @@
 
     .tanaq__manufacturer-title h1 {
         font-size: 4rem;
+    }
+
+    .longTitleAdHoc {
+        font-size: 5rem !important;
     }
 }
 
