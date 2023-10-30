@@ -1,4 +1,5 @@
 const $ = require( "jquery" );
+require( "bootstrap" );
 
 $(document).ready(function () {
     let lastScrollTop = 0
