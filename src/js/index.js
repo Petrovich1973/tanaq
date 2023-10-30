@@ -93,10 +93,10 @@ $(document).ready(function () {
 
     $(".tanaq__filter__btn-group .btn").on("click", function (event) {
         event.preventDefault()
-        const btnValueArray = $(this).attr("data-value").split(",").map(el => el.trim())
+        const btnValueArray = $(this).attr("data-type").split(",").map(el => el.trim())
         $(this).addClass("active").siblings().removeClass("active")
         $(".tanaq__manufacturer-list-item").removeClass("hide").filter(function() {
-            const thisValuesArray = $(this).attr("data-value").split(",").map(el => el.trim())
+            const thisValuesArray = $(this).attr("data-type").split(",").map(el => el.trim())
             const res1 = !btnValueArray.some(el => thisValuesArray.includes(el))
             let res2 = false;
             const searchValue = $(".tanaq__filter__search-input").val().trim()
@@ -118,8 +118,8 @@ $(document).ready(function () {
                 const thisName = $(this).find("h4").text().toLowerCase()
                 res1 = !thisName.includes(valueSearch)
             }
-            const thisType = $(this).attr("data-value").toLowerCase()
-            const typeSelectList = $(".tanaq__filter__btn-group .btn.active").attr("data-value").split(",").map(el => el.trim().toLowerCase())
+            const thisType = $(this).attr("data-type").toLowerCase()
+            const typeSelectList = $(".tanaq__filter__btn-group .btn.active").attr("data-type").split(",").map(el => el.trim().toLowerCase())
             const res2 = !typeSelectList.includes(thisType)
             return res1 || res2
         }).addClass( "hide" )
