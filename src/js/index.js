@@ -1,10 +1,13 @@
-const $ = require( "jquery" );
+// const $ = require( "jquery" );
 require( "bootstrap" );
+// const Lazy = require("jquery-lazy")
 
-$(document).ready(function () {
+$(document).ready(function ($) {
     let lastScrollTop = 0
     const header = $(".header")
     const navbarHeight = header.outerHeight()
+
+    $("img.lazy").Lazy();
 
     $('.navigation a[href^="#"]').on('click', function (e) {
         e.preventDefault()
