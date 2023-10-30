@@ -418,6 +418,10 @@
     min-height: 450px;
 }
 
+.tanaq__manufacturer-list-item.hide {
+    display: none;
+}
+
 .tanaq__manufacturer-list-item h4 {
     font-size: 1.25rem;
     font-weight: 500;
