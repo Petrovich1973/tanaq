@@ -521,6 +521,11 @@
     letter-spacing: normal;
 }
 
+.longTitleAdHoc {
+    font-size: 4rem !important;
+    letter-spacing: -0.2rem !important;
+}
+
 @media (max-width: 1399px) {
 
     .tanaq__intro {
@@ -583,6 +588,10 @@
 
     .tanaq__intro {
         gap: 24px;
+    }
+
+    .longTitleAdHoc {
+        font-size: 3.4rem !important;
     }
 
 }
@@ -773,8 +782,7 @@
     }
 
     .longTitleAdHoc {
-        font-size: 5rem !important;
-        letter-spacing: -0.28rem !important;
+        font-size: 3.4rem !important;
     }
 }
 
@@ -821,15 +829,12 @@
     }
 
     .longTitleAdHoc {
-        font-size: 4.5rem !important;
-        letter-spacing: -0.28rem !important;
+        font-size: 2rem !important;
+        letter-spacing: -0.1rem !important;
     }
 }
 
 @media (max-width: 420px) {
-    .longTitleAdHoc {
-        font-size: 18vw !important;
-    }
 
     .tanaq__slide, .tanaq__slide.active {
         background-size: 82% auto;

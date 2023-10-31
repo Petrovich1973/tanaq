@@ -76,7 +76,7 @@ $(document).ready(function ($) {
         // send ajax
         $.ajax({
             type: "POST",
-            url: "/send-handle", // Путь до файла отправителя
+            url: "/handle-send.php", // Путь до файла обработчика
             data: data,
             success: function () {
                 console.log("Ok! Сообщение отправлено.")
