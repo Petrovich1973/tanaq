@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     // Files to watch for
@@ -21,7 +21,14 @@ module.exports = {
         // }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'src' }
+                {
+                    from: 'src',
+                    globOptions: {
+                        ignore: [
+                            '**/template.html'
+                        ]
+                    }
+                }
             ]
         })
     ],
