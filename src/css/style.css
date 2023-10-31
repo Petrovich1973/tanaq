@@ -88,6 +88,15 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
     color: #AEAEAE;
 }
 
+a.link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+
 .btn {
     display: flex;
     flex-shrink: 0;
@@ -159,7 +168,6 @@ textarea:focus, input:focus, input:-webkit-autofill, input:-webkit-autofill:focu
 
 .header__logo {
     display: block;
-    flex-shrink: 0;
 }
 
 .header__left, .header__right {
