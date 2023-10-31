@@ -206,7 +206,7 @@
 
 .tanaq__intro__pic img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     max-height: 600px;
 }
 
@@ -619,7 +619,7 @@
     }
 
     .tanaq__intro__pic {
-        width: 80%;
+        width: 100%;
     }
 
     .tanaq__intro__article-short {
