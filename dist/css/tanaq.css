@@ -113,7 +113,7 @@
     padding: 24px !important;
     min-height: 450px;
     background-size: 0;
-    transition: background-position .1s ease-in;
+    transition: all .3s cubic-bezier(0.4, 0.59, 0.66, 1.23);
 }
 
 .tanaq__slide__row {
