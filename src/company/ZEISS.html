@@ -5,7 +5,7 @@
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <title>TANAQ - Primovert</title>
+    <title>TANAQ - ZEISS</title>
 
     <base href="../" />
 
@@ -42,57 +42,116 @@
 
 <main>
 
-    <section class="tanaq__block section container tanaq__manufacturer-detail">
+    <section class="tanaq__block section container tanaq__company">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb tanaq__breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="manufacture/ZEISS.html">Zeiss</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Primovert</li>
+                <li class="breadcrumb-item active" aria-current="page">ZEISS</li>
             </ol>
         </nav>
-        <div class="tanaq__intro tanaq__card">
-            <div class="tanaq__intro__pic">
-                <img src="images/microscope/ZEISS__Axio_Imager.png"
-                     alt="ZEISS Axio Imager"/>
+        <div class="tanaq__company-title">
+            <h1>ZEISS</h1>
+            <img src="images/microscope/logo__ZEISS.png" alt="ZEISS" class="tanaq__company-logo"/>
+        </div>
+        <div class="tanaq__filter">
+            <div class="tanaq__filter__btn-group">
+                <button class="btn active" data-type="Upright, Inverted">All</button>
+                <button class="btn" data-type="Upright">Upright</button>
+                <button class="btn" data-type="Inverted">Inverted</button>
             </div>
-            <div class="tanaq__intro__article-short">
-                <h3 class="tanaq__intro__title">ZEISS Primovert.</h3>
-                <div class="tanaq__intro__description">Your Upright Microscope Platform for Life Science Research</div>
-                <div class="tanaq__intro__text">Combine the best for life science research in a single upright platform.
-                    Whether you are simply observing and recording or performing highly complex imaging experiments:
-                    It's easy to customize system components to meet the needs of your applications.
-                </div>
-                <a href="#formFeedback" class="btn active">
-                    <span>Leave a request</span>
-                    <span class="icon"><img src="svg/arrow.svg" alt="arrow"/></span>
-                </a>
+            <div class="tanaq__filter__search">
+                <img src="svg/search.svg" alt="search"/>
+                <input type="text" class="tanaq__filter__search-input" autocomplete="off" placeholder="Search by name"/>
             </div>
         </div>
-        <div class="tanaq__row tanaq__frame tanaq__slide-box">
-            <div class="tanaq__row__item tanaq__img tanaq__slide pic-small"
-                 style="background-image: url(images/microscope/ZEISS__Axio_Imager_Z2.png);">
-                <div class="tanaq__slide__row">
-                    <div class="tanaq__slide__title tanaq__visible">A2</div>
+        <div class="tanaq__row tanaq__frame tanaq__company-list">
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axio_Imager.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axio Imager</h4>
+                    <a class="btn sm" href="product/ZEISS__Axio_Imager.html"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+                <div class="tanaq__company-list-item__footer">
+                    <ul class="tanaq__company-list-item__set">
+                        <li>M2</li>
+                        <li>A2</li>
+                        <li>D2</li>
+                        <li>Z2</li>
+                    </ul>
                 </div>
             </div>
-            <div class="tanaq__row__item tanaq__img tanaq__slide pic-small"
-                 style="background-image: url(images/microscope/ZEISS__Axio_Imager_Z2.png);">
-                <div class="tanaq__slide__row">
-                    <div class="tanaq__slide__title tanaq__visible">M2</div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Primo_Star.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Primo Star</h4>
+                    <a class="btn sm" href="product/ZEISS__Primo_Star.html"><img src="svg/arrow.svg" alt="arrow"/></a>
                 </div>
             </div>
-            <div class="tanaq__row__item tanaq__img tanaq__slide pic-small"
-                 style="background-image: url(images/microscope/ZEISS__Axio_Imager_Z2.png);">
-                <div class="tanaq__slide__row">
-                    <div class="tanaq__slide__title tanaq__visible">D2</div>
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axioscope.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axioscope</h4>
+                    <a class="btn sm" href="product/ZEISS__Axioscope.html"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+                <div class="tanaq__company-list-item__footer">
+                    <ul class="tanaq__company-list-item__set">
+                        <li>A1</li>
+                    </ul>
                 </div>
             </div>
-            <div class="tanaq__row__item tanaq__img tanaq__slide pic-small active"
-                 style="background-image: url(images/microscope/ZEISS__Axio_Imager_Z2.png);">
-                <div class="tanaq__slide__row">
-                    <div class="tanaq__slide__title tanaq__visible">Z2</div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axiolab_5.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axiolab 5</h4>
+                    <a class="btn sm" href="product/ZEISS__Axiolab_5.html"><img src="svg/arrow.svg" alt="arrow"/></a>
                 </div>
             </div>
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Primovert.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Primovert</h4>
+                    <a class="btn sm" href="product/ZEISS__Primovert.html"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axiovert_7.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axiovert 7</h4>
+                    <a class="btn sm" href="product/ZEISS__Axiovert_7.html"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="tanaq__other">
+            <div class="tanaq__block__header">
+                <h2 class="tanaq__block__title">Other</h2>
+                <div class="tanaq__block__index">Other microscopes available by request</div>
+            </div>
+            <ul class="tanaq__other-list">
+                <li>
+                    <a href="#formFeedback">
+                        <span>Stemi 508</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>Stemi 305</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>Axio Observer</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>SteREO Discovery</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -150,10 +209,10 @@
                 </div>
                 <div class="tanaq__footer__item__down-group">
                     <ul class="navigation">
-                        <li><a href="manufacture/NIKON.html">Nikon</a></li>
-                        <li><a href="manufacture/ZEISS.html">Zeiss</a></li>
-                        <li><a href="manufacture/LEICA.html">Leica</a></li>
-                        <li><a href="manufacture/OLYMPUS.html">Olympus</a></li>
+                        <li><a href="company/NIKON.html">Nikon</a></li>
+                        <li><a href="company/ZEISS.html">Zeiss</a></li>
+                        <li><a href="company/LEICA.html">Leica</a></li>
+                        <li><a href="company/OLYMPUS.html">Olympus</a></li>
                         <li><a href="index.html#biomedicalTests">Biomedical tests</a></li>
                         <li><a href="index.html#telemedicine">Telemedicine</a></li>
                         <li><a href="index.html#serviceCenter">Service center</a></li>

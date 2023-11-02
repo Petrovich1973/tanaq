@@ -359,7 +359,7 @@
     font-size: 1rem;
 }
 
-.tanaq__manufacturer, .tanaq__manufacturer-detail, .tanaq__article, .tanaq__contacts {
+.tanaq__company, .tanaq__company-detail, .tanaq__article, .tanaq__contacts {
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -387,14 +387,14 @@
     padding-top: 0;
 }
 
-.tanaq__manufacturer-title {
+.tanaq__company-title {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 24px;
 }
 
-.tanaq__manufacturer-title h1 {
+.tanaq__company-title h1 {
     margin: 0;
     padding: 0;
     font-size: 6rem;
@@ -404,13 +404,13 @@
     text-transform: uppercase;
 }
 
-.tanaq__manufacturer-logo {
+.tanaq__company-logo {
     display: block;
     height: 2.5rem;
     margin-top: 0.8rem;
 }
 
-.tanaq__manufacturer-list-item {
+.tanaq__company-list-item {
     flex: 1 calc(50% - 24px);
     display: flex;
     flex-direction: column;
@@ -419,22 +419,22 @@
     min-height: 450px;
 }
 
-.tanaq__manufacturer-list-item.hide {
+.tanaq__company-list-item.hide {
     display: none;
 }
 
-.tanaq__manufacturer-list-item h4 {
+.tanaq__company-list-item h4 {
     font-size: 1.25rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.tanaq__manufacturer-list-item__header {
+.tanaq__company-list-item__header {
     display: flex;
     justify-content: space-between;
 }
 
-.tanaq__manufacturer-list-item__set {
+.tanaq__company-list-item__set {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -537,7 +537,7 @@
         flex: inherit;
     }
 
-    .tanaq__manufacturer-list-item {
+    .tanaq__company-list-item {
         min-height: 400px;
     }
 
@@ -688,12 +688,12 @@
         padding: 6px 0;
     }
 
-    .tanaq__manufacturer-list {
+    .tanaq__company-list {
         gap: 24px;
         background-color: transparent;
     }
 
-    .tanaq__manufacturer-list-item {
+    .tanaq__company-list-item {
         flex: 1 calc(50% - 24px);
         background-size: auto 70%;
         border-radius: 30px;
@@ -752,12 +752,12 @@
         flex: 1 calc(100% - 24px);
     }
 
-    .tanaq__manufacturer-title.OLYMPUS-tile {
+    .tanaq__company-title.OLYMPUS-tile {
         gap: 0;
         flex-direction: column;
     }
 
-    .tanaq__manufacturer-title h1 {
+    .tanaq__company-title h1 {
         font-size: 5rem;
         letter-spacing: -.32rem;
     }
@@ -766,7 +766,7 @@
         display: none;
     }
 
-    .tanaq__manufacturer-list-item {
+    .tanaq__company-list-item {
         flex: 1 calc(100% - 24px);
     }
 
@@ -825,7 +825,7 @@
         width: 50%;
     }
 
-    .tanaq__manufacturer-title h1 {
+    .tanaq__company-title h1 {
         font-size: 4rem;
     }
 
@@ -847,7 +847,7 @@
 }
 
 @media (max-width: 360px) {
-    .tanaq__manufacturer-title.OLYMPUS-tile, .tanaq__manufacturer-title.OLYMPUS-tile h1 {
+    .tanaq__company-title.OLYMPUS-tile, .tanaq__company-title.OLYMPUS-tile h1 {
         font-size: 18vw !important;
     }
 }

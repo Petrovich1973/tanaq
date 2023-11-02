@@ -95,7 +95,7 @@ $(document).ready(function ($) {
         event.preventDefault()
         const btnValueArray = $(this).attr("data-type").split(",").map(el => el.trim())
         $(this).addClass("active").siblings().removeClass("active")
-        $(".tanaq__manufacturer-list-item").removeClass("hide").filter(function() {
+        $(".tanaq__company-list-item").removeClass("hide").filter(function() {
             const thisValuesArray = $(this).attr("data-type").split(",").map(el => el.trim())
             const res1 = !btnValueArray.some(el => thisValuesArray.includes(el))
             let res2 = false;
@@ -112,7 +112,7 @@ $(document).ready(function ($) {
     $(".tanaq__filter__search-input").on("input", function (event) {
         event.preventDefault()
         const valueSearch = $(this).val().trim().toLowerCase()
-        $(".tanaq__manufacturer-list-item").removeClass("hide").filter(function() {
+        $(".tanaq__company-list-item").removeClass("hide").filter(function() {
             let res1 = false
             if(valueSearch.length) {
                 const thisName = $(this).find("h4").text().toLowerCase()

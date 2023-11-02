@@ -5,7 +5,7 @@
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <title>TANAQ - Morphological and structural analysis</title>
+    <title>TANAQ - NIKON</title>
 
     <base href="../" />
 
@@ -42,53 +42,116 @@
 
 <main>
 
-    <section class="tanaq__block section container tanaq__article">
+    <section class="tanaq__block section container tanaq__company">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb tanaq__breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Morphological and structural analysis</li>
+                <li class="breadcrumb-item active" aria-current="page">NIKON</li>
             </ol>
         </nav>
-        <div class="tanaq__title tanaq__article-block">
-            <h1 class="tanaq__block__title tanaq__article-column longTitleAdHoc">Morphological and structural analysis</h1>
-            <p class="tanaq__article-column">An upright microscope is used to observe samples such as slides placed
-                on a stage through an objective located above the stage. Nikon provides two types of focusing
-                mechanisms, a focusing stage and a focusing nosepiece, which can mount various intermediate tubes and
-                accessories in a stable manner. Nikon’s upright microscopes offer a wide range of objectives and uniform
-                illumination, providing bright </p>
+        <div class="tanaq__company-title">
+            <h1>NIKON</h1>
+            <img src="images/microscope/logo__NIKON.png" alt="NIKON" class="tanaq__company-logo"/>
         </div>
-        <div class="tanaq__title tanaq__article-block">
-            <div class="tanaq__article-column">
-                <h2 class="tanaq__block__title">Metaphase Detection</h2>
-                <p>Metaphase detection system works with color hi-resolution hi-speed cameras which give us below 4 min
-                    search time for the opened specimen area 20mmX40mm.
-                    we compensate glass slope and thickness difference from slide to slide and can work with
-                    1-4-8-50-100-200 specimen loaders.</p>
+        <div class="tanaq__filter">
+            <div class="tanaq__filter__btn-group">
+                <button class="btn active" data-type="Upright, Inverted">All</button>
+                <button class="btn" data-type="Upright">Upright</button>
+                <button class="btn" data-type="Inverted">Inverted</button>
             </div>
-            <div class="tanaq__img tanaq__article-column"
-                 style="background-image: url(images/article/Metaphase_Detection.png);"></div>
+            <div class="tanaq__filter__search">
+                <img src="svg/search.svg" alt="search"/>
+                <input type="text" class="tanaq__filter__search-input" autocomplete="off" placeholder="Search by name"/>
+            </div>
         </div>
-        <div class="tanaq__title tanaq__article-block">
-            <div class="tanaq__article-column">
-                <h2 class="tanaq__block__title">Karyotyping</h2>
-                <p>Karyotyping is one of the most reliable and sophisticated at the same time program. It gives our
-                    clients all tools to improve collected metaphases images quality, cut unnecessary parts of the
-                    image, separate chromosomes with multiple separation methods. Our artificial intelligence software
-                    (AI) has the highest rate of automated karyotyping capabilities.</p>
+        <div class="tanaq__row tanaq__frame tanaq__company-list">
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axio_Imager.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axio Imager</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+                <div class="tanaq__company-list-item__footer">
+                    <ul class="tanaq__company-list-item__set">
+                        <li>M2</li>
+                        <li>A2</li>
+                        <li>D2</li>
+                        <li>Z2</li>
+                    </ul>
+                </div>
             </div>
-            <div class="tanaq__img tanaq__article-column"
-                 style="background-image: url(images/article/Karyotyping.png);"></div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Primo_Star.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Primo Star</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axioscope.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axioscope</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+                <div class="tanaq__company-list-item__footer">
+                    <ul class="tanaq__company-list-item__set">
+                        <li>A1</li>
+                    </ul>
+                </div>
+            </div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axiolab_5.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axiolab 5</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
+            <div data-type="Upright" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Primovert.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Primovert</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
+            <div data-type="Inverted" class="tanaq__row__item tanaq__img tanaq__company-list-item"
+                 style="background-image: url(images/microscope/ZEISS__Axiovert_7.png);">
+                <div class="tanaq__company-list-item__header">
+                    <h4>Axiovert 7</h4>
+                    <a class="btn sm" href="#"><img src="svg/arrow.svg" alt="arrow"/></a>
+                </div>
+            </div>
         </div>
-        <div class="tanaq__title tanaq__article-block">
-            <div class="tanaq__article-column">
-                <h2 class="tanaq__block__title">FISH</h2>
-                <p>We recommend this product as an additional automation working together with our FISH product. This
-                    combination gives routine operations a new productive development and significantly improves FISH
-                    tests productivity. Another AI application is objects training and search in various branch
-                    applications.</p>
+        <div class="tanaq__other">
+            <div class="tanaq__block__header">
+                <h2 class="tanaq__block__title">Other</h2>
+                <div class="tanaq__block__index">Other microscopes available by request</div>
             </div>
-            <div class="tanaq__img tanaq__article-column"
-                 style="background-image: url(images/article/FISH.png);"></div>
+            <ul class="tanaq__other-list">
+                <li>
+                    <a href="#formFeedback">
+                        <span>Stemi 508</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>Stemi 305</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>Axio Observer</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formFeedback">
+                        <span>SteREO Discovery</span>
+                        <span class="link-tooltip">Request</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -146,10 +209,10 @@
                 </div>
                 <div class="tanaq__footer__item__down-group">
                     <ul class="navigation">
-                        <li><a href="manufacture/NIKON.html">Nikon</a></li>
-                        <li><a href="manufacture/ZEISS.html">Zeiss</a></li>
-                        <li><a href="manufacture/LEICA.html">Leica</a></li>
-                        <li><a href="manufacture/OLYMPUS.html">Olympus</a></li>
+                        <li><a href="company/NIKON.html">Nikon</a></li>
+                        <li><a href="company/ZEISS.html">Zeiss</a></li>
+                        <li><a href="company/LEICA.html">Leica</a></li>
+                        <li><a href="company/OLYMPUS.html">Olympus</a></li>
                         <li><a href="index.html#biomedicalTests">Biomedical tests</a></li>
                         <li><a href="index.html#telemedicine">Telemedicine</a></li>
                         <li><a href="index.html#serviceCenter">Service center</a></li>
