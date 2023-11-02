@@ -181,7 +181,8 @@ a.link-overlay {
     position: absolute;
     top: 10px;
     left: 0;
-    gap: .4rem
+    gap: .4rem;
+    display: none;
 }
 
 .pic {
