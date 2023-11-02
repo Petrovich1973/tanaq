@@ -190,6 +190,8 @@
 .tanaq__list-item__hide-text {
     display: none;
     font-size: 90%;
+    color: #767676;
+    font-style: italic;
 }
 
 .tanaq__intro {
